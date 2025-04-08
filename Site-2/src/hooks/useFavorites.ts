@@ -30,7 +30,7 @@ export default function useFavorites() {
       const data = await response.json();
       if (isMounted) {
         // Extraction de la propriété "recipe" de chaque élément de la réponse
-        const recipes = Array.isArray(data) ? data.map((item: any) => item.recipe) : [];
+        const recipes = Array.isArray(data) ? data.map((item: {recipe : Recipe}) => item.recipe) : [];
         setFavorites(recipes);
       }
     } catch (err: any) {

@@ -1,8 +1,7 @@
 // src/pages/RecipeDetails.tsx
-import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import HomeButton from "../components/HomeButton";
-import useFavorites, { Recipe } from "../hooks/useFavorites";
+import useFavorites from "../hooks/useFavorites";
 
 type RecipeProps = {
   id: string;
