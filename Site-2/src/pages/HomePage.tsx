@@ -5,7 +5,6 @@ export default function HomePage() {
   return (
     <div className="home-wrapper">
       <div className="home-background-layer" />
-
       <div className="home-container">
       <h1 className="home-title">Bienvenue !</h1>
         <div className="button-group">
