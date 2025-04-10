@@ -22,7 +22,7 @@ jobs:
         working-directory: Site-2
 
       - name: Run tests with coverage
-        run: npm run test -- --coverage
+        run: npx vitest --coverage
         working-directory: Site-2
 
       - name: Upload coverage report
