@@ -16,6 +16,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'jsx-a11y': "eslint-plugin-jsx-a11y"
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -23,6 +24,9 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      "jsx-a11y/alt-text": "warn",
+       "jsx-a11y/anchor-is-valid": "warn",
+       "no-console": ["warn", { "allow": ["warn", "error"] }]
     },
   },
 )
