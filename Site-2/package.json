@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
+    "package": "^1.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.30.0",
+    "scheduler": "^0.26.0",
     "tailwindcss": "^4.0.9"
   },
   "devDependencies": {
