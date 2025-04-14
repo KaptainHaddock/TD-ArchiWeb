@@ -15,7 +15,7 @@ echo "Suppression des images Docker locales..."
 sudo docker image prune -af
 
 # Étape 5 : Construire l'image Docker
-sudo docker build -t victorsavalle/tdarchiweb:latest
+sudo docker build -t victorsavalle/tdarchiweb:latest .
 
 # Étape 6 : Pousser l'image sur le registre Docker
 sudo docker push victorsavalle/tdarchiweb:latest
